@@ -9,13 +9,13 @@ html {
 }
 
 .marque{
-    height: 10vh;
+    /* height: 5vh; */
     width: 100vw;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12vh;
+    padding: 2vh;
 }
 
 .marque .slider{
