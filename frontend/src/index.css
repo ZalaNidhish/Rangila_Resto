@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.marque{
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12vh;
+}
+
+.marque .slider{
+    display: flex;
+    gap: 2vh;
+    word-wrap: none;
+    animation: marque 12s infinite linear;
+    white-space: nowrap;
+
+}
+
+.marque .slider h1{
+    width: 20vw;
+    text-align: center;
+}
+
+
+
+.Exclusives{
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: transparent;
+}
+
+
+.Slidertext{
+    position: absolute;
+    top: -5vh;
+    right: -5vh;
+    width: 35vh;
+    height: 35vh;
+    background:linear-gradient(-45deg,rgb(67, 67, 255),rgb(0, 255, 0));
+    color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+    font-weight: bold;
+    padding: 2;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7vh;
+}
+
+
+.menuFood1{
+    animation: Food1 3s linear infinite;
+}
+
+@keyframes Food1 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px) translateX(10px) rotate(6deg);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.menuFood2{
+    animation: Food2 3s linear infinite;
+}
+
+@keyframes Food2 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px) translateX(-10px) rotate(-6deg);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.menuFood3{
+    animation: Food3 3s linear infinite;
+}
+
+@keyframes Food3 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px) translateX(10px) rotate(6deg);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.menuFood4{
+    animation: Food4 3s linear infinite;
+}
+
+@keyframes Food4 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px) translateX(-10px) rotate(-6deg);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes marque {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
