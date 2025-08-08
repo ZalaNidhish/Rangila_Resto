@@ -59,7 +59,6 @@ html {
     padding: 7vh;
 }
 
-
 .menuFood1{
     animation: Food1 3s linear infinite;
 }
@@ -135,4 +134,27 @@ html {
         transform: translateX(-100%);
     }
     
+}
+
+
+@media (max-width: 600px){
+
+.Slidertext{
+    position: absolute;
+    top: -2vh;
+    right: -2vh;
+    width: 15vh;
+    height: 15vh;
+    background:linear-gradient(-45deg,rgb(67, 67, 255),rgb(0, 255, 0));
+    color: rgb(255, 255, 255);
+    font-size: 3.2vw;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+
 }

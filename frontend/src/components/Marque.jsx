@@ -18,14 +18,14 @@ const Marque = () => {
         <div className="slider">
             {items.map((item, idx) => (
                 <div key={idx} className="items px-4 py-2">
-                    <h1 className='text-4xl font-semibold'>{item}</h1>
+                    <h1 className='text-[20px] md:text-4xl font-semibold'>{item}</h1>
                 </div>
             ))}
         </div>
         <div className="slider">
             {items.map((item, idx) => (
-                <div key={idx} className="items px-4 py-2">
-                    <h1 className='text-4xl font-semibold'>{item}</h1>
+                <div key={idx} className="items px-4 md:py-2">
+                    <h1 className='text-[20px] md:text-4xl font-semibold'>{item}</h1>
                 </div>
             ))}
         </div>

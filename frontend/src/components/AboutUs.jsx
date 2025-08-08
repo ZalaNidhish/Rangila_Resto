@@ -58,17 +58,27 @@ const AboutUs = () => {
     },
   ];
 
-// rotate-348
-
+  // rotate-348
 
   return (
-    <div className="h-screen flex flex-col items-center justify-end relative pb-10">
-      <div className="About text-6xl font-semibold absolute top-1/6">About Us</div>
-      <div className="swiper h-3/6 w-full">
+    <div className="h-[50vh] md:h-screen flex flex-col items-center justify-end relative md:pb-10">
+      <div className="About text-3xl md:text-6xl font-semibold absolute md:top-1/6 top-2/7">
+        About Us
+      </div>
+      <div className="swiper h-[30vh] md:h-3/6 w-full">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 2500, disableOnInteraction: false,  pauseOnMouseEnter: true,  }}
+          autoplay={{
+            delay: 25000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           slidesPerView={3}
+          breakpoints={{
+            0: { slidesPerView: 1 }, // Mobile (<640px)
+            640: { slidesPerView: 2 }, // Small tablets
+            1024: { slidesPerView: 3 }, // Laptops/desktops
+          }}
           centeredSlides={true}
           loop={true}
           className="h-full w-full flex items-baseline justify-center "
@@ -89,8 +99,8 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="text-[3vh] h-full w-full p-10 flex flex-col items-center justify-center gap-2 text-black">
-                  <h1 className="text-1xl font-bold">{item.title}</h1>
-                  {item.text}
+                  <h1 className="text-[25px] md:text-2xl font-bold">{item.title}</h1>
+                  <h1 className="text-[16px]">{item.text}</h1>
                 </div>
               </div>
             </SwiperSlide>

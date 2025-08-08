@@ -7,23 +7,23 @@ import img4 from "../assets/menuPage/menu4.png";
 
 const MenuPage = () => {
   return (
-    <div className="h-screen w-screen relative bg-gray-100">
+    <div className="h-[50vh] md:h-screen w-screen relative bg-gray-100 mt-4">
       <div className="">
-        <div className="menuFood1 h-[30vh] w-[30vh] overflow-hidden absolute top-10 left-10">
+        <div className="menuFood1 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-10 left-10">
           <img src={img1} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood2 h-[30vh] w-[30vh] overflow-hidden absolute top-10 right-10">
+        <div className="menuFood2 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-10 right-10">
           <img src={img2} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood3 h-[30vh] w-[30vh] overflow-hidden absolute bottom-10 left-10">
+        <div className="menuFood3 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-10 left-10">
           <img src={img3} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood4 h-[30vh] w-[30vh] overflow-hidden absolute bottom-10 right-10">
+        <div className="menuFood4 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-10 right-10">
           <img src={img4} alt="" className=" h-full w-full object-contain" />
         </div>
       </div>
       <div className="h-full w-full flex flex-col items-center justify-center p-16">
-        <p className="text-2xl font-bold w-1/2 flex flex-col gap-4 text-center ">
+        <p className="text-[18px] md:text-2xl font-bold w-[80vw] md:w-1/2 flex flex-col gap-4 text-center ">
           You’ve seen what’s trending. <br /> Now taste what’s timeless. <br />{" "}
           Our menu brings classic comfort <br /> with a twist <br /> 100%
           vegetarian, 100% irresistible. <br />

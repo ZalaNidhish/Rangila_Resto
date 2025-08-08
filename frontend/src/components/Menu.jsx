@@ -88,16 +88,16 @@ const Menu = () => {
   ];
 
   return (
-    <div className="min-h-screen w-screen bg-gray-100 flex flex-col items-center justify-center">
-      <h1 className="text-5xl m-10 font-bold">From Our Kitchen To You</h1>
+    <div className="min-h-screen w-screen bg-gray-100 flex flex-col items-center justify-center p-6">
+      <h1 className="md:text-5xl text-2xl md:m-10 m-6 font-bold">From Our Kitchen To You</h1>
       <div className="w-full max-w-4xl p-6 bg-white rounded-lg shadow-md">
         {menuItems.map((category, index) => (
           <div key={index} className="mb-8">
             <h1 className="text-2xl font-bold mb-2">{category.category}</h1>
             <ul>
               <li>
-                <div className="flex ">
-                  <div className="w-2/5 ">
+                <div className="flex">
+                  <div className="md:w-2/5 w-4/5">
                     <ul>
                       {category.items.map((item, itemIndex) => (
                         <li key={itemIndex} className="py-1">
@@ -115,7 +115,7 @@ const Menu = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="w-2/5 h-45">
+                  <div className="w-2/5 h-45 hidden md:flex">
                     <img src={category.img} alt="" className="h-full w-full object-contain"/>
                   </div>
                 </div>

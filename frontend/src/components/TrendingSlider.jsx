@@ -36,12 +36,12 @@ const TrendingSlider = () => {
   ];
 
   return (
-    <div className="h-screen w-full flex items-center justify-center gap-0 bg-gray-100">
-      <h1 className="Exclusives text-6xl font-bold rotate-270 text-center">
+    <div className="h-[50vh] md:h-screen w-full flex items-center justify-center gap-0 bg-gray-100">
+      <h1 className="Exclusives text-6xl font-bold rotate-270 text-center hidden md:flex">
         Exclusives <br />
         Offers
       </h1>
-      <div className="h-6/7 w-1/2 flex flex-col items-center justify-center gap-0 ">
+      <div className="h-[80%] w-4/5 md:h-6/7 md:w-1/2 flex flex-col items-center justify-center gap-0 ">
         <div className="swiper h-5/7 w-full rounded-4xl hover:cursor-grab active:cursor-grabbing relative shadow-2xl">
           <Swiper
             // navigation={true}
