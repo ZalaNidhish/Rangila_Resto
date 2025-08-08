@@ -69,9 +69,17 @@ const AboutUs = () => {
         <Swiper
           modules={[Autoplay]}
           autoplay={{
-            delay: 25000,
+            delay: 2500,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
+          }}
+          onSwiper={(swiper) => {
+            swiper.el.addEventListener("touchstart", () =>
+              swiper.autoplay.stop()
+            );
+            swiper.el.addEventListener("touchend", () =>
+              swiper.autoplay.start()
+            );
           }}
           slidesPerView={3}
           breakpoints={{
@@ -99,7 +107,9 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="text-[3vh] h-full w-full p-10 flex flex-col items-center justify-center gap-2 text-black">
-                  <h1 className="text-[25px] md:text-2xl font-bold">{item.title}</h1>
+                  <h1 className="text-[25px] md:text-2xl font-bold">
+                    {item.title}
+                  </h1>
                   <h1 className="text-[16px]">{item.text}</h1>
                 </div>
               </div>
