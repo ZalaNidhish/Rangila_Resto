@@ -28,7 +28,7 @@ const MenuPage = () => {
           Our menu brings classic comfort <br /> with a twist <br /> 100%
           vegetarian, 100% irresistible. <br />
           <Link to="/menu">
-            <span className="text-blue-600 hover:underline cursor-pointer">
+            <span className="text-blue-600 underline cursor-pointer">
               Browse Our Full Menu →
             </span>
           </Link>
