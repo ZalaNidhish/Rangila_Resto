@@ -98,7 +98,7 @@ const AboutUs = () => {
                   <div className="z-4 h-full w-full p-5 text-4xl text-white absolute top-10 font-bold">
                     {item.title}
                   </div>
-                  <div className="h-full w-full rounded-2xl bg-[#ff1f1f] z-3">
+                  <div className="h-full w-full rounded-2xl bg-gray-400 z-3">
                     <img
                       src={item.img}
                       alt={item.title}

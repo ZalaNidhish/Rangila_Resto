@@ -31,22 +31,33 @@ html {
 }
 
 .marque .slider{
-    animation: marque 12s infinite linear;
+    animation: marque 20s infinite linear;
     white-space: nowrap;
 }
 
 .marque .slider h1{
-    width: 20vw;
     text-align: center;
 }
 
+@keyframes marque {
 
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
 
 .Exclusives{
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: transparent;
 }
-
 
 .Slidertext{
     position: absolute;
@@ -129,19 +140,6 @@ html {
     100%{
         transform: translateY(0);
     }
-}
-
-
-@keyframes marque {
-
-    0%{
-        transform: translateX(0);
-    }
-
-    100%{
-        transform: translateX(-100%);
-    }
-    
 }
 
 
