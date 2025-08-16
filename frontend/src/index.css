@@ -1,3 +1,15 @@
+@font-face {
+    font-family: menu;
+    src: url('../src/assets/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: menuItems;
+    src: url('../src/assets/JosefinSans-Italic-VariableFont_wght.ttf');
+}
+
+
+
 @import "tailwindcss";
 
 ::-webkit-scrollbar{
@@ -19,12 +31,8 @@ html {
 }
 
 .marque .slider{
-    display: flex;
-    gap: 2vh;
-    word-wrap: none;
     animation: marque 12s infinite linear;
     white-space: nowrap;
-
 }
 
 .marque .slider h1{
@@ -157,4 +165,12 @@ html {
     padding: 3vh;
 }
 
+}
+
+.menuCat {
+    font-family: menu;
+}
+
+.menuItems {
+    font-family: menuItems;
 }

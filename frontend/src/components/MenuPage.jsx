@@ -9,16 +9,16 @@ const MenuPage = () => {
   return (
     <div className="h-[50vh] md:h-screen w-screen relative bg-gray-100 mt-4">
       <div className="">
-        <div className="menuFood1 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-10 left-10">
+        <div className="menuFood1 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-2 md:top-10 left-2 md:left-10">
           <img src={img1} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood2 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-10 right-10">
+        <div className="menuFood2 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute top-2 md:top-10 right-2 md:right-10">
           <img src={img2} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood3 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-10 left-10">
+        <div className="menuFood3 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-2 md:bottom-10 left-2 md:left-10">
           <img src={img3} alt="" className=" h-full w-full object-contain" />
         </div>
-        <div className="menuFood4 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-10 right-10">
+        <div className="menuFood4 md:h-[30vh] md:w-[30vh] h-[10vh] w-[10vh] overflow-hidden absolute bottom-2 md:bottom-10 right-2 md:right-10">
           <img src={img4} alt="" className=" h-full w-full object-contain" />
         </div>
       </div>
@@ -29,7 +29,7 @@ const MenuPage = () => {
           vegetarian, 100% irresistible. <br />
           <Link to="/menu">
             <span className="text-blue-600 underline cursor-pointer">
-              Browse Our Full Menu →
+              Browse Our Full Menu  
             </span>
           </Link>
         </p>
