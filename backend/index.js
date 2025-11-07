@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 const DB = require("./connection")
+console.log("DB STATE:", mongoose.connection.readyState);
 const adminRoutes = require("./routes/adminRoutes")
 
 
@@ -25,6 +26,7 @@ app.use("/admin", adminRoutes);
 
 
 app.post("/register", async (req, res) => {
+  console.log("➡️ /register hit");
   const { username, password, email, phone } = req.body;
 
   async function findUsers() {
