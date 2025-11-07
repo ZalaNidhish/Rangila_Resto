@@ -1,10 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose")
 require("dotenv").config();
+const DB = require("./connection")
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
-const DB = require("./connection")
 console.log("helloo");
 
 console.log("DB STATE:", mongoose.connection.readyState);
