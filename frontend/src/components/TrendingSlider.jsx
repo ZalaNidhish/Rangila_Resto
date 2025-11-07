@@ -5,11 +5,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-import img1 from "../assets/slider/slider1.jpg";
-import img2 from "../assets/slider/slider2.jpg";
-import img3 from "../assets/slider/slider3.jpg";
-import img4 from "../assets/slider/slider4.jpg";
-import img5 from "../assets/slider/slider5.jpg";
+import img1 from "../assets/slider/slider1.webp";
+import img2 from "../assets/slider/slider2.webp";
+import img3 from "../assets/slider/slider3.webp";
+import img4 from "../assets/slider/slider4.webp";
+import img5 from "../assets/slider/slider5.webp";
 
 const TrendingSlider = () => {
   const exclusiveOffers = [
@@ -65,7 +65,6 @@ const TrendingSlider = () => {
             ))}
           </Swiper>
         </div>
-        <div className="custom-Bullets h-10 w-full flex items-center justify-center"></div>
       </div>
     </div>
   );

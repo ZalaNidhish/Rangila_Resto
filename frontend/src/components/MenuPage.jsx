@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import img1 from "../assets/menuPage/menu1.png";
+import img1 from "../assets/menuPage/menu1.webp";
 import img2 from "../assets/menuPage/menu2.webp";
-import img3 from "../assets/menuPage/menu3.png";
-import img4 from "../assets/menuPage/menu4.png";
+import img3 from "../assets/menuPage/menu3.webp";
+import img4 from "../assets/menuPage/menu4.webp";
 
 const MenuPage = () => {
   return (

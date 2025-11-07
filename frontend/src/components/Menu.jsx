@@ -1,11 +1,11 @@
 import React from "react";
-import BurgersCat from "../assets/menu/BurgersCat.png";
-import DrinksCat from "../assets/menu/DrinksCat.png";
-import PizzasCat from "../assets/menu/PizzasCat.png";
-import StartersCat from "../assets/menu/StartersCat.avif";
-import MexicanCat from "../assets/menu/MexicanCat.avif";
-import PastasCat from "../assets/menu/PastasCat.jpg";
-import DessertsCat from "../assets/menu/DessertsCat.avif";
+import BurgersCat from "../assets/menu/BurgersCat.webp";
+import DrinksCat from "../assets/menu/DrinksCat.webp";
+import PizzasCat from "../assets/menu/PizzasCat.webp";
+import StartersCat from "../assets/menu/StartersCat.webp";
+import MexicanCat from "../assets/menu/MexicanCat.webp";
+import PastasCat from "../assets/menu/PastasCat.webp";
+import DessertsCat from "../assets/menu/DessertsCat.webp";
 
 const Menu2 = () => {
   const menuItems = [

@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../assets/bg.jpg'
+import bg from '../assets/bg.webp'
 
 const Hero = () => {
   return (
@@ -13,3 +13,4 @@ const Hero = () => {
 }
 
 export default Hero
+  
