@@ -4,6 +4,8 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 const DB = require("./connection")
+console.log("helloo");
+
 console.log("DB STATE:", mongoose.connection.readyState);
 const adminRoutes = require("./routes/adminRoutes")
 
