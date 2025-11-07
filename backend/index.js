@@ -12,7 +12,7 @@ const User = require("./models/user");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "https://rangila-resto.vercel.app/" }));
+app.use(cors({ origin: "https://rangila-resto.vercel.app" }));
 
 
 
