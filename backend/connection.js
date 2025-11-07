@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
+require("dotenv").config();
+const MongoURL = process.env.MongoURL;
 
-mongoose.connect('mongodb://localhost:27017/Rangila_Resto')
+mongoose.connect(MongoURL)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
