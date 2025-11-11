@@ -14,7 +14,7 @@ const AdminSearchItems = () => {
     };
 
     const response = await axios.post(
-      "http://localhost:5000/admin/searchitem",
+      "http://rangilaresto.onrender.com/admin/searchitem",
       data
     );
 

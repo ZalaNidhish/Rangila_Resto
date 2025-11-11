@@ -58,7 +58,7 @@ const AboutUs = () => {
     },
   ];
 
-  // rotate-348
+
 
   return (
     <div className="h-[50vh] md:h-screen flex flex-col items-center justify-end relative md:pb-10">

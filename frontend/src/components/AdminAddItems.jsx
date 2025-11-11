@@ -21,7 +21,7 @@ const AdminAddItems = () => {
     };
 
     const response = await axios.post(
-      "http://localhost:5000/admin/additem",
+      "http://rangilaresto.onrender.comadmin/additem",
       data
     );
 

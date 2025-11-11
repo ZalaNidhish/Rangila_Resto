@@ -13,7 +13,7 @@ const Logout = () => {
     const id = window.location.pathname.split("/")[2]; // Extract user ID from URL
 
     try {
-      const response = await axios.post("http://localhost:5000/logout", { id });
+      const response = await axios.post("http://rangilaresto.onrender.com/logout", { id });
 
       if (response.data.success) {
         navigate("/", {state:{isLoggedin: response.data.isLoggedin}});

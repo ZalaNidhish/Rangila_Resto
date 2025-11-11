@@ -35,7 +35,7 @@ const AdminSelectItems = () => {
     };
 
     const response = await axios.post(
-      "http://localhost:5000/admin/availableitems",
+      "http://rangilaresto.onrender.com/admin/availableitems",
       data
     );
 
