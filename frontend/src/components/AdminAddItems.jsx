@@ -21,7 +21,7 @@ const AdminAddItems = () => {
     };
 
     const response = await axios.post(
-      "http://localhost:5000/additem",
+      "http://localhost:5000/admin/additem",
       data
     );
 

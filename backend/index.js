@@ -5,7 +5,6 @@ const DB = require("./connection")
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
-console.log("helloo");
 
 const adminRoutes = require("./routes/adminRoutes")
 
@@ -28,12 +27,9 @@ app.use("/admin", adminRoutes);
 
 
 app.post("/register", async (req, res) => {
-  console.log("➡️ /register hit");
   const { username, password, email, phone } = req.body;
 
   async function findUsers() {
-
-    console.log("helloooo");
     
     const preUser1 = await User.findOne({ username: username });
     const preUser2 = await User.findOne({ email: email });

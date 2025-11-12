@@ -19,11 +19,8 @@ const Register = () => {
     };
 
     try {
-
-      console.log(data);
-      
-      
-      const response = await axios.post("http://localhost:5000/register", data);
+            
+      const response = await axios.post("http://localhost:5000/admin/register", data);
 
       if (response.data.success) {
         navigate("/", {
