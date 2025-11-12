@@ -17,7 +17,7 @@ const Login = () => {
     };
 
     try {
-      const response = await axios.post("https://localhost:5000/login", data);
+      const response = await axios.post("http://localhost:5000/login", data);
       // Optionally, redirect or show success message here
       if (response.data.success && !response.data.isAdmin) {
         navigate("/", {

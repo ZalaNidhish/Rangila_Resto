@@ -19,9 +19,11 @@ const Register = () => {
     };
 
     try {
-      console.log("hellooooooooo");
+
+      console.log(data);
       
-      const response = await axios.post("https://localhost:5000/register", data);
+      
+      const response = await axios.post("http://localhost:5000/register", data);
 
       if (response.data.success) {
         navigate("/", {

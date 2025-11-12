@@ -35,9 +35,9 @@ const Navbar = ({id, isLoggedin, isAdmin }) => {
           <li className="hover:underline cursor-pointer text-[14px]  bg-blue-700 px-2 py-1 rounded text-white  md:bg-blue-700 md:px-4 md:rounded md:text-white text-nowrap">
             <Link to="/today">Today's Menu</Link>
           </li>
-          <li className="hover:underline cursor-pointer text-[14px]  bg-blue-700 px-2 py-1 rounded text-white  md:bg-blue-700 md:px-4 md:rounded md:text-white text-nowrap">
+          {/* <li className="hover:underline cursor-pointer text-[14px]  bg-blue-700 px-2 py-1 rounded text-white  md:bg-blue-700 md:px-4 md:rounded md:text-white text-nowrap">
             <Link to="/menu">Menu</Link>
-          </li>
+          </li> */}
           <li className="hover:underline cursor-pointer text-[14px]  bg-blue-700 px-2 py-1 rounded text-white  md:bg-blue-700 md:px-4 md:rounded md:text-white text-nowrap">
             <Link to={log}>{box3}</Link>
           </li>

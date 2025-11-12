@@ -15,7 +15,7 @@ const User = require("./models/user");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "https://rangila-resto.vercel.app" }));
+app.use(cors());
 
 
 
@@ -109,5 +109,4 @@ app.post("/logout", async (req,res)=>{
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
-  alert("hello");
 });
