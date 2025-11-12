@@ -19,7 +19,9 @@ const Register = () => {
     };
 
     try {
-      const response = await axios.post("https://rangilaresto.onrender.com/register", data);
+      console.log("hellooooooooo");
+      
+      const response = await axios.post("https://localhost:5000/register", data);
 
       if (response.data.success) {
         navigate("/", {

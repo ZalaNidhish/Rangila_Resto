@@ -32,6 +32,9 @@ app.post("/register", async (req, res) => {
   const { username, password, email, phone } = req.body;
 
   async function findUsers() {
+
+    console.log("helloooo");
+    
     const preUser1 = await User.findOne({ username: username });
     const preUser2 = await User.findOne({ email: email });
     const preUser3 = await User.findOne({ phone: phone });
@@ -106,4 +109,5 @@ app.post("/logout", async (req,res)=>{
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
+  alert("hello");
 });
