@@ -6,7 +6,7 @@ const Today = () => {
   const [availableItems, setAvailableItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin/availableitems") // backend endpoint
+    fetch("https://rangilaresto.onrender.com/admin/availableitems") // backend endpoint
       .then((res) => res.json())
       .then((data) => setAvailableItems(data)) // update state with fetched items
       .catch((err) => console.error(err));
